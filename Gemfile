@@ -12,19 +12,19 @@ gem 'simple_form'
 gem 'will_paginate'
 gem 'gon'
 
-=begin
+#=begin
   
 gem 'authentify', :git => 'http://github.com/emclab/authentify.git', :branch => '3.2.12.01'  #: ##for rspec test    #:path => '../engines/authentify'  #
 gem 'commonx', :git => 'http://github.com/emclab/commonx.git', :branch => '3.2.12.01'  #:path => '../engines/commonx'   #
 gem 'searchx', :git => 'http://github.com/emclab/searchx.git', :branch => '3.2.12.01'
 gem 'production_orderx', :git => 'http://github.com/emclab/production_orderx.git', :branch => '3.2.12.01'
-=end
-#=begin
+#=end
+=begin
 gem 'authentify', :path => '../engines/authentify'  #  
 gem 'commonx', :path => '../engines/commonx'   #
 gem 'searchx', :path => '../engines/searchx'
 gem 'production_orderx', :path => '../engines/production_orderx'
-#=end
+=end
 
 group :assets do
   group :production do
