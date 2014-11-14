@@ -1,0 +1,35 @@
+<div id="main_menu">
+	<table width="90%">
+		<tr>
+			<td width="40%" valign="top">
+				<ul>
+					<li><%= link_to 'RFQ', SUBURI + "/authentify/view_handler?index=1&url=#{SUBURI + jobshop_rfqx.rfqs_path}" %></li>
+					<li><%= link_to '报价', SUBURI + "/authentify/view_handler?index=1&url=#{SUBURI + jobshop_quotex.quotes_path}" %></li>
+					<li><%= link_to '工艺', SUBURI + "/authentify/view_handler?index=1&url=#{SUBURI + mfg_processx.mfg_processes_path}" %></li>
+					<li><%= link_to '订单', SUBURI + "/authentify/view_handler?index=1&url=#{SUBURI + mfg_orderx.orders_path}" %></li>
+					<li><%= link_to '生产批次', SUBURI + "/authentify/view_handler?index=1&url=#{SUBURI + mfg_batchx.batches_path}" %></li>
+					
+					<li>System Config</li>	
+                    <li><%= link_to '客户商业状态', SUBURI + "/authentify/view_handler?index=1&url=#{SUBURI + CGI::escape(commonx.misc_definitions_path(:for_which => 'customer_status', :subaction => 'customer_status'))}" %></li>
+                    <li><%= link_to '质量体系', SUBURI + "/authentify/view_handler?index=1&url=#{SUBURI + CGI::escape(commonx.misc_definitions_path(:for_which => 'quality_system', :subaction => 'quality_system'))}" %></li>
+                    <li><%= link_to '设备分类', SUBURI + "/authentify/view_handler?index=1&url=#{SUBURI + CGI::escape(commonx.misc_definitions_path(:for_which => 'equipment_category', :subaction => 'equipment_category'))}" %></li>
+                    <li><%= link_to '设备状态', SUBURI + "/authentify/view_handler?index=1&url=#{SUBURI + CGI::escape(commonx.misc_definitions_path(:for_which => 'equipment_status', :subaction => 'equipment_status'))}" %></li>
+                    
+				</td>
+				<td width="20">&nbsp;</td>
+				<td valign="top">
+				<ul>
+					<li><%= link_to '客户', SUBURI + "/authentify/view_handler?index=1&url=#{SUBURI + kustomerx.customers_path}" %></li>
+					<li><%= link_to '设备', SUBURI + "/authentify/view_handler?index=1&url=#{SUBURI + machine_toolx.machine_tools_path}" %></li>					
+					<li><%= link_to '设备维修记录', SUBURI + "/authentify/view_handler?index=1&url=#{SUBURI + maint_recordx.maint_records_path}" %></li>	
+					<li><%= link_to '登录Log', SUBURI + "/authentify/view_handler?index=1&url=#{SUBURI + authentify.sys_logs_path}" if has_action_right?('index_sys_log', 'user_menus') %></li>
+					<li> </li>				
+					<li><%= link_to '交流分类', SUBURI + "/authentify/view_handler?index=1&url=#{SUBURI + CGI::escape(commonx.misc_definitions_path(:for_which => 'customer_comm_category', :subaction => 'customer_comm_category'))}" %></li>
+					<li><%= link_to '生产批次状态', SUBURI + "/authentify/view_handler?index=1&url=#{SUBURI + CGI::escape(commonx.misc_definitions_path(:for_which => 'mfg_batch_status', :subaction => 'mfg_batch_status'))}" %></li>
+					<li><%= link_to '设备维修分类', SUBURI + "/authentify/view_handler?index=1&url=#{SUBURI + CGI::escape(commonx.misc_definitions_path(:for_which => 'equip_maintanence_type', :subaction => 'equip_maintanence_type'))}"  %></li>
+					
+				</ul>
+			</td>
+		</tr>
+	</table>	
+</div>
