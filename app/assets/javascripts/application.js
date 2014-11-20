@@ -17,4 +17,4 @@
 //= require authentify/application.js
 //= require commonx/application.js
 //= require production_orderx/application.js
-//= require bootstrap.min
+//= require bootstrap

@@ -31,7 +31,7 @@ PATH
 PATH
   remote: ../engines/production_orderx
   specs:
-    production_orderx (3.2.12.01)
+    production_orderx (3.2.12.03)
       coffee-rails (~> 3.2.1)
       database_cleaner
       execjs
